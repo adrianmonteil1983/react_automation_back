@@ -3,9 +3,9 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017";
 const mqttModule = require('mqtt');
 
-const mqtt = require('./mqtt.js')
-const arduino = require('./arduino.js')
-const dataBase = require('./dataBase');
+const mqtt = require('./mqtt/mqtt.js')
+const arduino = require('./arduinos/arduino.js')
+const dataBase = require('./database/dataBase.js');
 
 const today = new Date().toLocaleDateString();
 
